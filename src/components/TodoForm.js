@@ -10,9 +10,9 @@ export const TodoForm = ({addTodo}) => {
     setValue("")
   }
   return (
-    <form className='TodoForm' onSubmit={handleSubmit}>
-        <input type='text' className='todo-input' value={value} onChange={(e) =>      setValue(e.target.value)} placeholder='What is the task today?' />
-        <button type='submit' className='todo-btn'>
+    <form className=' text-center p-5' onSubmit={handleSubmit}>
+        <input type='text' className=' w-52 selection:bg-pink-300 text-stone-800 py-2 px-4 rounded border-l-2 border-b-2' value={value} onChange={(e) =>      setValue(e.target.value)} placeholder='What is the task today?' />
+        <button type='submit' className=' bg-pink-300 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded '>
             Add task
         </button>
     </form>

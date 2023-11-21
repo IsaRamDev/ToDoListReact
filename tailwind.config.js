@@ -6,7 +6,12 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'sm': '640px',
+        'xsm': '320px',
+      },
+    },
   },
   plugins: [],
 }
